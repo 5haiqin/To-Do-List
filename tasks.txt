@@ -1,0 +1,6 @@
+1,Learn python,3pm,Completed
+2,Learning,6am,Pending
+3,College,8am,Pending
+5,Project report,2024-12-31,Completed
+6,Eat,5pm,Pending
+7,Sleep,10pm,Pending

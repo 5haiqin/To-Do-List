@@ -1,113 +1,114 @@
-# To-Do List Manager
+# 🔧 To-Do List Manager
 
-Welcome to the **To-Do List Manager**! 📝 This is a simple, console-based application to help you organize your tasks efficiently.
-
----
-
-## 📖 Project Description
-The To-Do List Manager allows users to:
-- Add tasks with descriptions and deadlines.
-- View all tasks categorized by status (Pending/Completed).
-- Edit task details.
-- Delete tasks.
-- Mark tasks as completed.
-
-All tasks are saved persistently in a file (`tasks.txt`), ensuring your data is safe across multiple sessions.
+A simple console-based To-Do List Manager written in Python. This application helps you organize tasks with features like adding, viewing, editing, deleting, and marking tasks as completed. All tasks are stored persistently in a `tasks.txt` file.
 
 ---
 
-## ✨ Features Implemented
+## 🗋 Features
 
-- **Add Tasks**: Input task description and deadline.
-- **View Tasks**: See pending and completed tasks clearly categorized.
-- **Edit Tasks**: Modify task details including description and deadline.
-- **Delete Tasks**: Remove tasks from your to-do list.
-- **Mark as Completed**: Update a task's status to completed.
-- **File Handling**: Tasks are stored in `tasks.txt` for persistent storage.
-
----
-
-## 🚀 How to Run the Project
-
-1. **Clone the Repository**:
-    ```bash
-    git clone <repository-url>
-    cd <repository-folder>
-    ```
-
-2. **Run the Script**:
-    - Open a terminal in the project folder.
-    - Execute the Python script:
-      ```bash
-      python todo_list_manager.py
-      ```
-
-3. Follow the console prompts to manage your tasks!
+- ✏️ **Add Tasks**: Add a task with a description and a deadline.
+- 🔎 **View Tasks**: View all tasks, categorized as pending or completed.
+- ✍️ **Edit Tasks**: Update the description or deadline of an existing task.
+- ❌ **Delete Tasks**: Remove a task by its ID.
+- 🚫 **Mark as Completed**: Change the status of a task from "Pending" to "Completed."
+- 📂 **Persistent Storage**: Tasks are saved in a `tasks.txt` file for later use.
 
 ---
 
-## 🛠 Instructions for Installation
+## 🚀 Getting Started
 
-1. Ensure **Python 3.x** is installed on your system. 🐍
-   - Download Python: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+### Prerequisites
+- Python 3.x installed on your system.
 
-2. Install the project dependencies (if any):
-   ```bash
-   pip install -r requirements.txt
+### Installation
+1. Clone this repository or download the `main.py` file.
+2. Ensure the `tasks.txt` file is in the same directory as `main.py`. If it doesn’t exist, the program will create it automatically.
+
+---
+
+## 🎨 Usage
+
+### Running the Program
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing `main.py`.
+3. Run the script using:
+   ```
+   python main.py
    ```
 
-   *(No external dependencies are currently required for this project.)*
-
-3. Run the application as described above.
-
----
-
-## 📝 Example Usage
-
-### Main Menu:
-```plaintext
+### Application Menu
+Upon running, you'll see the following menu:
+```
 Welcome to To-Do List Manager!
 1. Add Task
 2. View Tasks
 3. Edit Task
 4. Delete Task
-5. Exit
-Enter your choice: 1
+5. Mark Task as Completed
+6. Exit
 ```
 
-### Adding a Task:
-```plaintext
-Enter task description: Complete the programming assignment
-Enter deadline (YYYY-MM-DD): 2024-12-25
+### Example Workflow
+#### 1. Add a Task
+```
+Enter task description: Complete the Python project
+Enter deadline: 2024-12-31
 Task added successfully!
 ```
 
-### Viewing Tasks:
-```plaintext
+#### 2. View Tasks
+```
 To-Do List:
 [Pending]
-1. Complete the programming assignment - Deadline: 2024-12-25
+1. Complete the Python project - Deadline: 2024-12-31
 
 [Completed]
 No tasks completed yet.
 ```
 
-### Marking as Completed:
-```plaintext
-Enter task number to mark as completed: 1
+#### 3. Mark as Completed
+```
+Enter the task ID to mark as completed: 1
 Task marked as completed!
+```
+
+#### 4. View Updated Tasks
+```
+To-Do List:
+[Pending]
+No pending tasks.
+
+[Completed]
+1. Complete the Python project - Completed
 ```
 
 ---
 
-## 🌟 Future Enhancements
+## 📂 File Structure
 
-- Add task sorting by deadline.
-- Include a search/filter functionality.
-- Implement a graphical user interface (GUI).
+- **`main.py`**: The main Python script to run the application.
+- **`tasks.txt`**: A text file used to store tasks persistently. Each task is stored in the format:
+  ```
+  Task ID,Description,Deadline,Status
+  ```
+  Example:
+  ```
+  1,Complete the Python project,2024-12-31,Completed
+  ```
 
 ---
 
-## 👏 Contributions
+## 🛠️ Customization
+- Change the file name for task storage by modifying the `TASKS_FILE` variable in the `main.py` file.
+- Enhance the user interface with additional libraries like `colorama` for colored output.
 
+---
+
+## 🏆 Acknowledgments
+- Inspired by the need for simple task management tools.
+- Built as part of a learning project.
+
+---
+
+## 🙌 Contributions
 Feel free to contribute by submitting issues or pull requests!
